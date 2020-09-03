@@ -1,4 +1,4 @@
-const { describe, test, expect } = require('@jest/globals');
+const { test, expect } = require('@jest/globals');
 const Scientific = require('../calculator/scientific-calculator');
 
 
