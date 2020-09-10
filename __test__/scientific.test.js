@@ -13,3 +13,15 @@ test('subs 25 - 5 to equal 20', () => {
     const scientific = new Scientific(items);
     expect(scientific.sub(items)).toBe(20);
 });
+
+test('Factorial 2 to equal 2', () => {
+    const items = [2]
+    const scientific = new Scientific(items);
+    expect(scientific.factorialize(items)).toBe(2);
+});
+
+test('Factorial 6 to equal 720', () => {
+    const items = [2]
+    const scientific = new Scientific(items);
+    expect(scientific.factorialize(items)).toBe(2);
+});
