@@ -1,10 +1,15 @@
 const Calculator = require("./calculator");
 
-class Scientific extends Calculator{
+class Scientific {
     constructor(items){
-        super(items)
+       this.items = items
+       this.calculator = new Calculator(items)
     }
 
+    sum() {
+        return this.calculator.sum()
+    }
+    
     sub() {
         return this.items.reduce((accumulator, currentValue) => accumulator - currentValue)
     }
